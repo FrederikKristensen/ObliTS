@@ -16,10 +16,17 @@
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <h1>I do UpperCase</h1>
   <div id="app">
     <input v-model="name" placeholder="Name">
-    <button v-on:click="sayHello()" class="btn btn-primary">Say hello</button>
+    <button v-on:click="sayUpper()" class="btn btn-primary">Say hello</button>
+    <div>{{ greeting }}</div>
+  </div>
+
+  <h1>I do LowerCase</h1>
+  <div id="app">
+    <input v-model="name" placeholder="Name">
+    <button v-on:click="sayLower()" class="btn btn-primary">Say hello</button>
     <div>{{ greeting }}</div>
   </div>
 

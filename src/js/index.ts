@@ -8,14 +8,25 @@ new Vue({
         greeting: ""
     },
     methods: {
-        sayHello() {
-            console.log("Say Hello " + this.name)
+        sayUpper() {
+            console.log("Your string: " + this.name)
             if (this.name == "") {
-                this.greeting = "Hello NoName"
+                this.greeting = "Your string: NoString"
             }
             else {
-                this.greeting = "Hello " + this.name
+                this.greeting = this.name.toUpperCase();
+            }
+        },
+
+        sayLower() {
+            console.log("Your string: " + this.name)
+            if (this.name == "") {
+                this.greeting = "Your string: NoString"
+            }
+            else {
+                this.greeting = this.name.toLowerCase();
             }
         }
+
     }
 })
